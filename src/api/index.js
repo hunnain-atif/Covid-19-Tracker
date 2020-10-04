@@ -24,7 +24,6 @@ export const fetchData = async () => {
 export const fetchDailyData = async () => {
   try {
     const { data } = await axios.get(`https://corona-api.com/timeline`);
-    console.log(data.data);
 
     const selectedData = data.data.map((dailyData) => ({
       confirmed: dailyData.confirmed,
