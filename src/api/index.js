@@ -17,6 +17,24 @@ export const fetchData = async () => {
 
     return selectedData;
   } catch (error) {
-    console.log("error gettin response");
+    console.log("error getting response");
+  }
+};
+
+export const fetchDailyData = async () => {
+  try {
+    const { data } = await axios.get(`https://corona-api.com/timeline`);
+    console.log(data.data);
+
+    const selectedData = data.data.map((dailyData) => ({
+      confirmed: dailyData.confirmed,
+      recovered: dailyData.recovered,
+      deaths: dailyData.deaths,
+      date: dailyData.date,
+    }));
+
+    return selectedData;
+  } catch (error) {
+    console.log(error);
   }
 };
