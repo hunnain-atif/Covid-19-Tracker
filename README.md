@@ -1,4 +1,17 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## General Information
+Web application built using React JS that gives users a dashboard to view and track the Covid-19 pandemic around the world. Users are able to see Cases, Recovered Cases and Deaths as well as filter the results by country. Finally users are also able to visualize the progress of the pandemic using a graph. The graphs in the project were created using Chart JS
+
+## Technologies / Frameworks
+- React
+- Material UI
+- Chart.js
+- Covid-19 API "https://covid19.mathdro.id/api"
+- Axios
+
+## Concepts Learned
+- React Hooks
+- Aysnc/Await Syntax
+- Api Data Fetching
 
 ## Available Scripts
 
